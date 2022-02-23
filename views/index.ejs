@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bridge - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='index/css'>
+  <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link href="/css/style.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+      
+      <a href="/"><img src="/img/logo.png" alt="" class="img-fluid" style="max-height: 72px;"></a>
+      
+      
+    </div>
+    
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="/">Home</a></li>
+        <li><a class="nav-link scrollto" href="/startups">Startups</a></li>
+        <li><a class="nav-link scrollto" href="/investors">Investors</a></li>
+        <li><a class="nav-link scrollto" href="/featured">Featured</a></li>
+        <li><a class="nav-link scrollto" href="/schools_colleges">Schools/Colleges</a></li>
+        <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
+        <% if(locals.user){ %>
+          <% if(locals.user.companyName){ %>
+            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #957DAD;"> Sign Out  </span></a></li>
+            <% }else{ %>
+              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #957DAD;"> Sign Out </span></a>
+              </li>
+            <% } %>
+        <% }else{ %>
+              <li><a class="nav-link scrollto" href="/login"><span style="color: #957DAD;">Sign In</span></a></li>
+            <% } %>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="/img/slide/slide-15.png" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Bridge</span></h2>
+                <i><h4 class="animate__animated animate__fadeInUp">connecting ideas to investments</h4></i>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="/img/slide/slide-2.png" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Are you a startup?</h2>
+                <p class="animate__animated animate__fadeInUp">From finding investors to building your team, from spreading your idea to learning about your competition, we've got you covered. Welcome to Bridge, partner!</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="/img/slide/slide-1.png" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Are you an Investor?</h2>
+                <p class="animate__animated animate__fadeInUp">Looking to invest in budding startups or diversifying your portfolio or randomly searching the startup space? You are at the right place. Welcome to Bridge, partner! </p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-double-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-double-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <!-- <div class="animate__animated animate__fadeInRight"> -->
+          <h2 >About Us</h2>
+          <p>Bridge for Startups is on a mission to support thriving, diverse, and inclusive startup communities around the world. We connect startups with the right people, products, and best practices to help your startup grow.
+          </p>
+        <!-- </div> -->
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+     <!-- ======= Our Services Section ======= -->
+     <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Features</h2>
+          <p>Find products, resources, and programs for every stage of your startup journey</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-easel"></i></div>
+              <h4 class="title"><a href="">New Opportunities</a></h4>
+              <p class="description">People can list their ideas on the platform so that interested investors could approach them. We are planning to integrate a competitions page where companies can ask startups to compete against each other for the funds.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
+              <h4 class="title"><a href="">Get yourself a Guide</a></h4>
+              <p class="description">Every budding startup can find their mentor who can guide them for their entrepreneurship journey.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-people"></i></div>
+              <h4 class="title"><a href="">Capacity Building</a></h4>
+              <p class="description">People having ideas but lacking a workforce can connect with people from the platform of various domains and form their team using this feature.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Networking</a></h4>
+              <p class="description">Bridge helps you to connect with investors who could help you out with your startup.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Services Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section class="counts section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> who got their investors for thier startups. </p>
+              <a href="#">Find out more &raquo;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> registered on our platform which got invested by various investors.</p>
+              <a href="#">Find out more &raquo;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> by our mentors in the form of webinars and guiding sessions.</p>
+              <a href="#">Find out more &raquo;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> responsible for the working of the platform. </p>
+              <a href="#">Find out more &raquo;</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+   
+
+    <!-- ======= Cta Section ======= -->
+    <section class="cta">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>List your Startup Now!</h3>
+          <p> Whether you’re starting out, or scaling to meet demand, connect with the right people, products, and best practices to help your startup grow.</p>
+          <a class="cta-btn" href="/signup/startup">Register</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= More Services Section ======= -->
+    <section class="more-services section-bg">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="card zoom">
+              <img src="/img/more-service-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Deeply</a></h5>
+                <p class="card-text">South Korean startup Deeply uses artificial intelligence to interpret everyday sounds</p>
+                <a href="https://deeplyinc.com/" class="btn">Explore more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="card zoom">
+              <img src="/img/more-service-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">LoanWell</a></h5>
+                <p class="card-text">Fintech startup LoanWell empowers aspiring entrepreneurs with access to capital</p>
+                <a href="https://loanwell.com/" class="btn">Explore more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="card zoom">
+              <img src="/img/more-service-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Feebris</a></h5>
+                <p class="card-text">UK startup Feebris leverages AI to care for vulnerable populations remotely</p>
+                <a href="https://www.feebris.com/" class="btn">Explore more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End More Services Section -->
+
+    <!-- ======= Info Box Section ======= -->
+    <section id="info-box" class="info-box py-0">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3><strong>FAQs</strong></h3>
+              <!-- <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              </p> -->
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> I am in the early stages of starting my business. What basic legal issues do I need to be aware of at this time, and where should I start? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      Starting a new business is an exciting and challenging undertaking. Begin by reviewing existing agreements you may have with your employer, as they may contain IP assignment provisions or restrictive covenants that could limit or harm your new venture. Next, consider how you should protect your business idea: use NDAs, IP contribution agreements, and consider the applicability of patents, copyrights and trademarks. Next, decide how your company will be structured. When evaluating which form of entity is right for you, identify tax considerations and the location and jurisdiction of your business. Finally, draft governing documents such as your articles of incorporation, bylaws, shareholder agreements and operating and partnership agreements. Consulting with financial, accounting/tax and legal professionals earlier in the process will help you avoid future problems and anticipate key steps as your business grows.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> My startup is beginning to expand, and I may need to raise capital to keep up. What do I need to consider as I evaluate funding options? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Your projected funding needs will be key. If you don’t need a lot of money you may prefer debt to equity, as it will allow you to expand without diluting your ownership or control. However, early-stage investors may not be willing to lend your business money unless there is the potential for upside; convertible debt can be a solution. The real risk of selling equity at an early stage is that you give away too much of your business for too little. You need to have a realistic sense of the attractiveness of your business to potential investors. Also, securities offerings done right aren’t cheap. Working with advisors, including industry experts, financial, tax/accounting and legal professionals before you begin to raise capital is a smart way to better position your business.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> How do I determine my startup costs and other expenses?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      It is wise to find out what startup costs you will incur before starting the business. Many a budding entrepreneur takes his or her life savings, or will borrow on the equity on their home before figuring these financial factors, only to find that they don’t have enough money. There are many web sites and other resources (including SCORE offices and Business Information Centers) that provide guidelines and worksheets to help determine costs for your business. Each item on your proposed budget sheet should be researched. Closely estimated costs can be obtained from utility companies, trade associations, and networking with other business people who may have already gone through this experience. Do not start buying until the investigation shows this venture is viable and you have all the information needed.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style="background-image: url(/img/info-box.png);">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Info Box Section -->
+
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+  
+        <div class="section-title">
+          <h2 style="margin-bottom: 10x;">STARTUPS IN THE BUZZ</h2>
+          <p style="margin-bottom: 20px;"> <strong> the talk of the town </strong></p>
+          <p>Find out about all the buzzing and upcoming startups in the country, from lifestyle to data science, we have them all.</p>
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">FinTech</li>
+              <li data-filter=".filter-web">Pharmacy</li>
+              <li data-filter=".filter-card">Technology</li>
+              <li data-filter=".filter-web">Travel</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="row portfolio-container">
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="text-align: center;">
+            <div class="portfolio-wrap">
+              <img src="/img/portfolio/1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PharmEasy</h4>
+                <p>Online Pharmacy</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="https://pharmeasy.in/" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="text-align: center;">
+            <div class="portfolio-wrap">
+              <img src="/img/portfolio/2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>CRED</h4>
+                <p>FinTech</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="https://cred.club/" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="text-align: center;">
+            <div class="portfolio-wrap">
+              <img src="/img/portfolio/3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>GROWW</h4>
+                <p>Investing Platform</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="https://groww.in/" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            
+          </div>
+    
+          
+        </div>
+  
+      </div>
+    </section><!-- End StartUps Section -->
+
+   
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Investors on the Table</h2>
+          <p>Network and grow with some of India's best lead investors</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member">
+              <img src="/img/team/team-1.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="/img/team/team-3.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="/img/team/team-4.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="/img/team/team-2.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact section-bg">
+
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>Are you clueless about how to gear up for your startup? Or Looking for a group to invest your money? If that's the case, You are on correct platform. Contact us for any further queries.</p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-stretch infos">
+            
+            <div class="row">
+              
+              <div class="col-lg-6 info d-flex flex-column align-items-stretch">
+                
+                <i class="bx bx-map"></i>
+                <div class="hvr-grow">
+                <h4>Address</h4>
+                <p>Delhi Technological University<br>New Delhi,India</p>
+              </div>
+              </div>
+              <div class="col-lg-6 info info-bg d-flex flex-column align-items-stretch">
+                <i class="bx bx-phone"></i>
+                <div class="hvr-grow">
+                  <h4>Call Us</h4>
+                  <p>+91 9876543210</p>
+                </div>
+            
+              </div>
+              <div class="col-lg-6 info info-bg d-flex flex-column align-items-stretch">
+                <i class="bx bx-envelope"></i>
+                <div class="hvr-grow">
+                  <h4>Email Us</h4>
+                  <p>contact@bridge.com<br>info@bridge.com</p>
+                </div>
+                
+              </div>
+              <div class="col-lg-6 info d-flex flex-column align-items-stretch">
+                <i class="bx bx-time-five"></i>
+                <div class="hvr-grow">
+                  <h4>Working Hours</h4>
+                  <p>Mon - Fri: 9AM to 5PM</p>
+                </div>
+                
+                
+                
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-stretch contact-form-wrap">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                
+                <div class="col-md-6 form-group">
+                  <div>
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                
+              </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <label for="email">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" rows="8" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Bridge</h3>
+            <p>
+              Delhi Technological University <br>
+              New Delhi, India<br><br>
+              <strong>Phone:</strong> +91 9876543210<br>
+              <strong>Email:</strong> info@bridge.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Startups in Buzz</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#info-box">FAQs</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/startups">Startups</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/investors">Investors</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/featured">Featured</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/schools_colleges">Schools/Colleges</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/learn">Learn</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter to get all the updates regarding the investors, startups and webinars by Bridge.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy;<strong><span> Bridge</span></strong>. T_Hacks 4.0 .
+      </div>
+      <div class="credits">
+        
+        Made by Team RgR.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/purecounter/purecounter.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/waypoints/noframework.waypoints.js"></script>
+  
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>
