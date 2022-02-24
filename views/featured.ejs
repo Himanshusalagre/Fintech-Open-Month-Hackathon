@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bridge - Featured</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/startups.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+      
+      <a href="/"><img src="/img/logo.png" alt="" class="img-fluid" style="max-height: 72px;"></a>
+      
+      
+    </div>
+    
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="/">Home</a></li>
+        <li><a class="nav-link scrollto" href="/startups">Startups</a></li>
+        <li><a class="nav-link scrollto" href="/investors">Investors</a></li>
+        <li><a class="nav-link scrollto active" href="/featured">Featured</a></li>
+        <li><a class="nav-link scrollto" href="/schools_colleges">Schools/Colleges</a></li>
+        <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
+        <% if(locals.user){ %>
+          <% if(locals.user.companyName){ %>
+            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #957DAD;"> Sign Out  </span></a></li>
+            <% }else{ %>
+              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #957DAD;"> Sign Out </span></a>
+              </li>
+            <% } %>
+        <% }else{ %>
+              <li><a class="nav-link scrollto" href="/login"><span style="color: #957DAD;">Sign In</span></a></li>
+            <% } %>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+
+ <!-- ======= End of Header  ======= -->    
+  
+
+<!-- ======= StartUps Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2 style="margin-bottom: 10x;">Featured Stories</h2>
+        <p>Explore inspiring stories from budding startups and ideas from around the country.</p>
+      </div>
+      <section class="cta">
+        <div class="container">
+    
+          <div class="text-center">
+            <h3>Have an inspiring story? Share Now!</h3>
+            <a class="cta-btn" href="/comingsoon">Share Your Story</a>
+          </div>
+    
+        </div>
+      </section>
+      <section class="more-services section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="card">
+                <img src="/img/more-service-1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Deeply</a></h5>
+                  <p class="card-text">South Korean startup Deeply uses artificial intelligence to interpret everyday sounds</p>
+                  <a href="#" class="btn">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="card">
+                <img src="/img/more-service-2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">LoanWell</a></h5>
+                  <p class="card-text">Fintech startup LoanWell empowers aspiring entrepreneurs with access to capital</p>
+                  <a href="#" class="btn">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="card">
+                <img src="/img/more-service-3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Feebris</a></h5>
+                  <p class="card-text">UK startup Feebris leverages AI to care for vulnerable populations remotely</p>
+                  <a href="#" class="btn">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="card">
+                <img src="/img/story-1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">CoinSwitch Kuber</a></h5>
+                  <p class="card-text">Inside CoinSwitch Kuber's journey: How 3 engineers built India’s largest crypto exchange</p>
+                  <a href="https://yourstory.com/2021/10/coinswitch-kuber-crypto-exchange-india-largest/amp" class="btn">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="card">
+                <img src="/img/story2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">MeteoRide</a></h5>
+                  <p class="card-text">These entrepreneurs started up in the electric mobility space to solve for first and last-mile connectivity problems</p>
+                  <a href="https://yourstory.com/2021/10/entrepreneurs-electric-mobility-space-first-last-mile-connectivity-metro-ride/amp" class="btn">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="card">
+                <img src="/img/story3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Svatvak</a></h5>
+                  <p class="card-text">Building A D2C Brand At Home: How Svatvak Is Leveraging The Digital Economy To Corner Success In A $2.57 Bn Skincare Market
+
+                  </p>
+                  <a href="#" class="btn">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+ 
+        </div>
+      </section>
+  <!-- End More Services Section -->
+  
+
+  </div>
+</section>
+
+<!-- End StartUps Section -->
+
+
+ 
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>investment spot</h3>
+            <p>
+              Delhi Technological University <br>
+              New Delhi, India<br><br>
+              <strong>Phone:</strong> +91 9964738921<br>
+              <strong>Email:</strong> info@Investmentspot.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Startups in Buzz</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#info-box">FAQs</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/startups">Startups</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/investors">Investors</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/featured">Featured</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/schools_colleges">Schools/Colleges</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/learn">Learn</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter to get all the updates regarding the investors, startups and webinars by Investment spot.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy;<strong><span> Investment spot</span></strong>.Fintech Hackathon
+      </div>
+      <div class="credits">
+        
+        Made by Problem Solvers
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/purecounter/purecounter.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

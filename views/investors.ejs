@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bridge - Investors</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/startups.css" rel="stylesheet">
+  <link href="/css/investor.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+      
+      <a href="/"><img src="/img/logo.png" alt="" class="img-fluid" style="max-height: 72px;"></a>
+      
+      
+    </div>
+    
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="/">Home</a></li>
+        <li><a class="nav-link scrollto" href="/startups">Startups</a></li>
+        <li><a class="nav-link scrollto active" href="/investors">Investors</a></li>
+        <li><a class="nav-link scrollto" href="/featured">Featured</a></li>
+        <li><a class="nav-link scrollto" href="/schools_colleges">Schools/Colleges</a></li>
+        <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
+        <% if(locals.user){ %>
+          <% if(locals.user.companyName){ %>
+            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #957DAD;"> Sign Out  </span></a></li>
+            <% }else{ %>
+              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #957DAD;"> Sign Out </span></a>
+              </li>
+            <% } %>
+        <% }else{ %>
+              <li><a class="nav-link scrollto" href="/login"><span style="color: #957DAD;">Sign In</span></a></li>
+            <% } %>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+<!-- End Header -->
+
+<!-- ======= StartUps Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2 style="margin-bottom: 10x;">Investors</h2>
+        <p>Invest in budding startups, maintain your portfolio & more.</p>
+        <a href="/signup/investor" class="button3" style="margin-top: 30px; margin-bottom: -60px;">Register as Investor</a>
+      </div>
+
+      
+      </div>
+
+    </div>
+  </section>
+<!-- End StartUps Section -->
+
+<!-- ======= Our Team Section ======= -->
+  <section id="team" class="team">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="member">
+            <img src="/img/team/team-1.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Walter White</h4>
+                <span>CEO, AB Capital</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+          <div class="member">
+            <img src="/img/team/4.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Sarah Jhonson</h4>
+                <span>MD, XY Ventures</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+          <div class="member">
+            <img src="/img/team/team-3.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>William Anderson</h4>
+                <span>CTO, ABC Trading Co.</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+          <div class="member">
+            <img src="/img/team/1.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Amanda Jepson</h4>
+                <span>Chairman, PQR Fincorp</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="member">
+            <img src="/img/team/team-4.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Walter White</h4>
+                <span>CEO, AB Capital</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+          <div class="member">
+            <img src="/img/team/2.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Sarah Jhonson</h4>
+                <span>MD, XY Ventures</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+          <div class="member">
+            <img src="/img/team/3.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>William Anderson</h4>
+                <span>CTO, ABC Trading Co.</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+          <div class="member">
+            <img src="/img/team/team-2.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Amanda Jepson</h4>
+                <span>Chairman, PQR Fincorp</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section><!-- End Our Team Section -->
+
+<!-- End  -->
+
+  <section class="cta">
+    <div class="container">
+
+      <div class="text-center">
+        <h3>Become an Investor, Now!</h3>
+        <a class="cta-btn" href="/signup/investor">Register</a>
+      </div>
+
+    </div>
+  </section>
+
+  <br>
+  
+
+  <!-- Testimonials Section -->
+
+  <div class="container container2" style="text-align: center;">
+    <h2 class="h22">TESTIMONIALS</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto card2">
+                <div class="card-image"> <img class="img-fluid d-flex mx-auto img2" src="https://i.imgur.com/3TlwnLF.jpg"> </div>
+                <div class="card-text">
+                    <div class="card-title">Amazing platform!</div> Bridge is a great platform for investors around the globe to discover new and upcoming startups. Really appreciate the medium!</div>
+                <div class="footer"> <span id="name">Micheal Smith<br></span> <span id="position">CEO of <a href="#">XYZ</a></span> </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto card2">
+                <div class="card-image"> <img class="img-fluid d-flex mx-auto img2" src="https://i.imgur.com/Uz4FjGZ.jpg"> </div>
+                <div class="card-text">
+                    <div class="card-title">Helps everyone!</div> The platform is a big assist to the the startup culture, helps both the investors and the startups. It can play a big role in the country's growth.
+                </div>
+                <div class="footer"> <span id="name">Angellia Miller<br></span> <span id="position">CEO of <a href="#">PQR</a></span> </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto card2">
+                <div class="card-image"> <img class="img-fluid d-flex mx-auto img2" src="https://i.imgur.com/udGH5tO.jpg"> </div>
+                <div class="card-text">
+                    <div class="card-title">Connects to the roots!</div> The idea to bring up startups from rural areas and remote areas is brilliant. 
+                </div>
+                <div class="footer"> <span id="name">Christina Williams<br></span> <span id="position">UX Designer at <a href="#">ABC</a></span> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End  -->
+
+<br><br>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Investment Spot</h3>
+            <p>
+              Delhi Technological University <br>
+              New Delhi, India<br><br>
+              <strong>Phone:</strong> +91 9964738921<br>
+              <strong>Email:</strong> info@Investmentspot.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Startups in Buzz</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#info-box">FAQs</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/startups">Startups</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/investors">Investors</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/featured">Featured</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/schools_colleges">Schools/Colleges</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/learn">Learn</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter to get all the updates regarding the investors, startups and webinars by Investment spot.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy;<strong><span> Investment spot</span></strong>. Fintech Hackathon
+      </div>
+      <div class="credits">
+        
+        Made by Problem Solvers
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/purecounter/purecounter.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

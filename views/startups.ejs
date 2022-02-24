@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bridge - StartUps</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/startups.css" rel="stylesheet">
+
+</head>
+
+<body>
+ <!-- ======= Header ======= -->
+ <header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+      
+      <a href="/"><img src="/img/logo.png" alt="" class="img-fluid" style="max-height: 72px;"></a>
+      
+      
+    </div>
+    
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="/">Home</a></li>
+        <li><a class="nav-link scrollto active" href="/startups">Startups</a></li>
+        <li><a class="nav-link scrollto" href="/investors">Investors</a></li>
+        <li><a class="nav-link scrollto" href="/featured">Featured</a></li>
+        <li><a class="nav-link scrollto" href="/schools_colleges">Schools/Colleges</a></li>
+        <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
+        <% if(locals.user){ %>
+          <% if(locals.user.companyName){ %>
+            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #2f5ee0;"> Sign Out  </span></a></li>
+            <% }else{ %>
+              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #2f5ee0;"> Sign Out </span></a>
+              </li>
+            <% } %>
+        <% }else{ %>
+              <li><a class="nav-link scrollto" href="/login"><span style="color: #2f5ee0;">Sign In</span></a></li>
+            <% } %>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+
+<!-- ======= StartUps Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2 style="margin-bottom: 10x;">StartUps</h2>
+        <p style="margin-bottom: 20px;"> <strong> the talk of the town </strong></p>
+        <p>Find out about all the buzzing and upcoming startups in the country, from lifestyle to data science, we have them all.</p>
+      </div>
+      <!-- ======= Counts Section ======= -->
+    <section class="counts section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-bar-chart-fill"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Startups</strong> are registered with us.</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-box-arrow-in-up"></i>
+              <span data-purecounter-start="0" data-purecounter-end="74" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Startups Accelerated</strong> with the help of our mentors and guiding sessions and webinars.</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-currency-dollar"></i>
+              <span data-purecounter-start="0" data-purecounter-end="140" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>$ 140 Million</strong> raised across stages</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-cash"></i>
+              <span data-purecounter-start="0" data-purecounter-end="170" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Equity:</strong> Startups use our equity management products </p>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">FinTech</li>
+            <li data-filter=".filter-ph">Medical</li>
+            <li data-filter=".filter-card">Technology</li>
+            <li data-filter=".filter-web">Travel</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-ph" style="text-align: center;">
+          <div class="portfolio-wrap">
+            <img src="/img/portfolio/1.png" style="height: 190px;" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>practo</h4>
+              <p>Full Fledged online healthcare</p>
+            </div>
+            <div class="portfolio-links">
+              <a href="/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="https://pharmeasy.in/" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <a href="/razorpay" class="button3" style="margin-top: 10px;">Invest</a>
+          <a href="" class="button3" style="margin-top: 10px;">Follow</a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="text-align: center;">
+          <div class="portfolio-wrap">
+            <img src="/img/portfolio/2.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>CRED</h4>
+              <p>FinTech</p>
+            </div>
+            <div class="portfolio-links">
+              <a href="/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="https://cred.club/" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <a href="/razorpay" class="button3" style="margin-top: 10px;">Invest</a>
+          <a href="" class="button3" style="margin-top: 10px;">Follow</a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="text-align: center;">
+          <div class="portfolio-wrap">
+            <img src="/img/portfolio/3.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>GROWW</h4>
+              <p>Investing Platform</p>
+            </div>
+            <div class="portfolio-links">
+              <a href="/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="https://groww.in/" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <a href="/razorpay" class="button3" style="margin-top: 10px;">Invest</a>
+          <a href="" class="button3" style="margin-top: 10px;">Follow</a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="text-align: center;">
+          <div class="portfolio-wrap">
+            <img src="/img/portfolio/4.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>IXIGO</h4>
+              <p>Travel</p>
+            </div>
+            <div class="portfolio-links">
+              <a href="/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="https://www.ixigo.com/" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <a href="/razorpay" class="button3" style="margin-top: 10px;">Invest</a>
+          <a href="" class="button3" style="margin-top: 10px;">Follow</a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card" style="text-align: center;">
+          <div class="portfolio-wrap">
+            <img src="/img/portfolio/5.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Devfolio</h4>
+              <p>Education & Hackathons</p>
+            </div>
+            <div class="portfolio-links">
+              <a href="/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="https://devfolio.co/" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <a href="/razorpay" class="button3" style="margin-top: 10px;">Invest</a>
+          <a href="" class="button3" style="margin-top: 10px;">Follow</a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="text-align: center;">
+          <div class="portfolio-wrap">
+            <img src="/img/portfolio/6.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Shuttl</h4>
+              <p>Bus Ride App</p>
+            </div>
+            <div class="portfolio-links">
+              <a href="/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="https://ride.shuttl.com/" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <a href="/razorpay" class="button3" style="margin-top: 10px;">Invest</a>
+          <a href="" class="button3" style="margin-top: 10px;">Follow</a>
+        </div>
+
+        
+      </div>
+
+    </div>
+  </section><!-- End StartUps Section -->
+
+
+  <section class="cta">
+    <div class="container">
+
+      <div class="text-center">
+        <h3>List your Startup Now!</h3>
+        <a class="cta-btn" href="/signup/startup">Register</a>
+      </div>
+
+    </div>
+  </section>
+   <!-- ======= Our Team Section ======= -->
+   <section id="team" class="team">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Startups Funded</h2>
+        <p>Startups which became true inspiration to budding entrepreneurs.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="member">
+            <img src="/img/team/team-6.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Daily Ninja</h4>
+                <span>Online Milk Delivery App</span>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+          <div class="member">
+            <img src="/img/team/team-7.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Drivezy</h4>
+                <span>Self-drive car rentals</span>
+              </div>
+              <div class="social">
+    
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+          <div class="member">
+            <img src="/img/team/team-8.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Ketto</h4>
+                <span> Online Crowdfunding Platform</span>
+              </div>
+              <div class="social">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+          <div class="member">
+            <img src="/img/team/team-5.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Groww</h4>
+                <span>Online investment platform that allows investors to invest in mutual funds and stocks.</span>
+              </div>
+              <div class="social">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Our Team Section -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Investment spot</h3>
+            <p>
+              Delhi Technological University <br>
+              New Delhi, India<br><br>
+              <strong>Phone:</strong> +91 9964738921<br>
+              <strong>Email:</strong> info@Investmentspot.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Startups in Buzz</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#info-box">FAQs</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/startups">Startups</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/investors">Investors</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/featured">Featured</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/schools_colleges">Schools/Colleges</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/learn">Learn</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter to get all the updates regarding the investors, startups and webinars by Investment spot.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy;<strong><span> Investment spot</span></strong>.Fintech Hackathon .
+      </div>
+      <div class="credits">
+        
+        Made by Team problem solvers.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/purecounter/purecounter.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bridge - Startup Profile</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/css/startup_db.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/razorpay.css" rel="stylesheet">
+
+</head>
+
+<body>
+ <!-- ======= Header ======= -->
+ <header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+      
+      <a href="/"><img src="/img/logo.png" alt="" class="img-fluid" style="max-height: 72px;"></a>
+      
+      
+    </div>
+    
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="/">Home</a></li>
+        <li><a class="nav-link scrollto" href="/startups">Startups</a></li>
+        <li><a class="nav-link scrollto" href="/investors">Investors</a></li>
+        <li><a class="nav-link scrollto" href="/featured">Featured</a></li>
+        <li><a class="nav-link scrollto" href="/schools_colleges">Schools/Colleges</a></li>
+        <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
+        <% if(locals.user){ %>
+          <% if(locals.user.companyName){ %>
+            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #2f5ee0;"> Sign Out  </span></a></li>
+            <% }else{ %>
+              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #2f5ee0;"> Sign Out </span></a>
+              </li>
+            <% } %>
+        <% }else{ %>
+              <li><a class="nav-link scrollto" href="/login"><span style="color: #2f5ee0;">Sign In</span></a></li>
+            <% } %>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+
+
+
+  
+   <!-- Header -->
+  <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center text-center" style="min-height: 200px; background-position: center top;">
+    <!-- Mask -->
+    <span class="mask bg-gradient-default opacity-8 "></span>
+    <!-- Header container -->
+    <section id="hero1">
+      <div class="hero1-container">
+        <div id="hero1Carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  
+          <ol class="carousel-indicators" id="hero1-carousel-indicators"></ol>
+  
+          <div class="carousel-inner" role="listbox">
+  
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="carousel-background"><img src="/img/slide/slide-8.png" alt=""></div>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <img src="/img/cred.png" alt="" style="height:250px">
+                  <h2 class="animate__animated animate__fadeInDown"><span>CRED</span></h2>
+                  <i><h4 class="animate__animated animate__fadeInUp">Suraksha Aur Bharosa Dono</h4></i>
+                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">EDIT PROFILE</a>
+                </div>
+              </div>
+            </div>            
+  
+          </div>
+  
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-double-left" aria-hidden="true"></span>
+          </a>
+  
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-double-right" aria-hidden="true"></span>
+          </a>
+  
+        </div>
+      </div>
+    </section><!-- End Hero -->
+  </div>
+  
+  <!-- Page content -->
+  <div class="container-fluid mt--7">
+    <div class="row">
+      <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+        <div class="card card-profile shadow">
+          
+          <div class="card-body pt-0 pt-md-4">
+            
+            <div class="text-center">
+              <h3>
+                ABOUT
+              </h3>
+              <hr class="my-4">
+              <p>CRED is a members-only credit card management and bill payments platform that rewards users every time they pay their credit card bills.</p>
+              
+            </div>
+<br><br>
+            <div class="text-center">
+                <h3>
+                  FOUNDER
+                </h3>
+                <hr class="my-4">
+                <p><strong>Kunal Shah</strong></p>
+                
+                
+              </div>
+              <br>
+              <br>
+              <div class="text-center">
+                <h3>
+                  LEGAL NAME
+                </h3>
+                <hr class="my-4">
+                
+                <p><strong>Dreamplug Technologies Private Limited</strong></p>
+                
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-8 order-xl-1">
+        <div class="card bg-secondary shadow">
+          <div class="card-header bg-white border-0">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <h3 class="mb-0">My account</h3>
+              </div>
+              <div class="col-4 text-right">
+                <a href="#!" class="btn btn-sm btn-primary">View Statistics</a>
+                <a href="#!" class="btn btn-sm btn-primary">Settings</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <form>
+              <h6 class="heading-small text-muted mb-4">User information</h6>
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-username">Username</label>
+                      <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="CRED">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-email">Email address</label>
+                      <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="riya@cred.com">
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <hr class="my-4">
+              <!-- Address -->
+              <h6 class="heading-small text-muted mb-4">Contact information</h6>
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-address">Address</label>
+                      <input id="input-address" class="form-control form-control-alternative" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-city">City</label>
+                      <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="New York">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-country">Country</label>
+                      <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="United States">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-country">Postal code</label>
+                      <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <!-- Description -->
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<!-- ======= Counts Section ======= -->
+<section class="counts section-bg">
+  <div class="container">
+
+    <div class="row no-gutters">
+
+      <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <i class="bi bi-currency-dollar"></i>
+          <span data-purecounter-start="0" data-purecounter-end="472.1" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>$471.2 M</strong>  Total Funding Amount </p>
+         
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <i class="bi bi-journal-richtext"></i>
+          <span data-purecounter-start="0" data-purecounter-end="29" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Investors</strong> who found this startup worth it.</p>
+         
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <i class="bi bi-headset"></i>
+          <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Investments</strong> done till now.</p>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <i class="bi bi-people"></i>
+          <span data-purecounter-start="0" data-purecounter-end="115" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Team Members</strong> responsible for the working of the platform. </p>
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Counts Section -->
+
+<!-- ======= Our Crowdfunding Section ======= -->
+<section id="hero" style="height: 50vh;">
+  <div class="hero-container" style="height: 50vh;">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" style="height: 50vh;">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox" style="height: 50vh;">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" >
+          <div class="carousel-background" ><img src="/img/slide/slide-10.png" alt=""></div>
+          <div class="carousel-container" style="height: 60vh;">
+            <div class="carousel-content" >
+              <h2 class="animate__animated animate__fadeInDown" ><span>CrowdFunding</span></h2>
+              <!-- <i><h4 class="animate__animated animate__fadeInUp"></h4></i> -->
+              <a href="/comingsoon"><button class="btn-get-started animate__animated animate__fadeInUp scrollto" id="rzp-button1" style="color:black">REGISTER</button></a>
+
+              
+              
+            </div>
+          </div>
+        </div>
+        
+      
+
+        
+
+                
+      </div>
+
+      
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+<section id="about" class="about">
+  <div class="container">
+
+    <div class="section-title">
+      <!-- <div class="animate__animated animate__fadeInRight"> -->
+      <h2 >Performance Analysis</h2>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="pieChart">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="columnChart">
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    <!-- </div> -->
+    </div>
+
+  </div>
+</section><!-- End About Us Section -->
+
+ <!-- ======= Our Team Section ======= -->
+ <section id="team" class="team">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>OUR TEAM</h2>
+     
+    </div>
+
+    <div class="row">
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="member">
+          <img src="/img/team/1.png" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+        <div class="member">
+          <img src="/img/team/2.png" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>Sarah Jhonson</h4>
+              <span>Product Manager</span>
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+
+      <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+        <div class="member">
+          <img src="/img/team/4.png" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Our Team Section -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Bridge</h3>
+            <p>
+              Delhi Technological University <br>
+              New Delhi, India<br><br>
+              <strong>Phone:</strong> +91 9964738921<br>
+              <strong>Email:</strong> info@investmentspot.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Startups in Buzz</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#info-box">FAQs</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/startups">Startups</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/investors">Investors</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/featured">Featured</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/schools_colleges">Schools/Colleges</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/learn">Learn</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter to get all the updates regarding the investors, startups and webinars by Bridge.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy;<strong><span> Investment Spot</span></strong>. Fintech Hackathon .
+      </div>
+      <div class="credits">
+        
+        Made by Team Problem Solvers.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/purecounter/purecounter.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src='https://canvasjs.com/assets/script/canvasjs.min.js'></script>
+  <script  src="/js/function.js"></script>
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

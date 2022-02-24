@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bridge - Investors</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
+
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/investor_db.css" rel="stylesheet">
+  <link href="/css/investor.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+      
+      <a href="/"><img src="/img/logo.png" alt="" class="img-fluid" style="max-height: 72px;"></a>
+      
+      
+    </div>
+    
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="/">Home</a></li>
+        <li><a class="nav-link scrollto" href="/startups">Startups</a></li>
+        <li><a class="nav-link scrollto" href="/investors">Investors</a></li>
+        <li><a class="nav-link scrollto" href="/featured">Featured</a></li>
+        <li><a class="nav-link scrollto" href="/schools_colleges">Schools/Colleges</a></li>
+        <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
+        <% if(locals.user){ %>
+          <% if(locals.user.companyName){ %>
+            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #957DAD;"> Sign Out  </span></a></li>
+            <% }else{ %>
+              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #957DAD;"> Sign Out </span></a>
+              </li>
+            <% } %>
+        <% }else{ %>
+              <li><a class="nav-link scrollto" href="/login"><span style="color: #957DAD;">Sign In</span></a></li>
+            <% } %>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+  
+<!-- End Header -->
+
+
+  <!-- Header -->
+  <div class="header pb-8  d-flex align-items-center text-center" style="min-height: 100px; max-height: 600px; background-position: center top;">
+    <!-- Mask -->
+    <span class="mask bg-gradient-default opacity-8 "></span>
+    <!-- Header container -->
+    <div class="container-fluid d-flex align-items-center text-center">
+      <div class="row text-center">
+        <div class="card-profile-image" >
+            <a href="#">
+              <img src="/img/team/1.png" class="rounded-circle">
+            </a>
+        </div>
+          
+        <div class="col-lg-7 text-center" style="padding-left: 480px; margin-left: 20px;">
+            
+          <h1 class="display-2 text-center">  Walter White</h1>
+          <p class="mt-0 mb-5">CEO, ABC Group</p>
+          <a href="#!" class="btn btn-info" style="background-color: #D291BC;">Edit profile</a>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+  <!-- Page content -->
+  <div class="container-fluid mt--7">
+    <div class="row">
+      <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+        <div class="card card-profile shadow">
+          
+          <div class="card-body pt-0 pt-md-4">
+            
+            <div >
+              <h3 class="text-center">
+                Notifications
+              </h3>
+              <hr class="my-4">
+              <p><strong>CRED</strong> is looking to expand operations in South East Asia. <i><a href="">Read More</a></i></p>
+              <p><strong>GROWW</strong> launched a new to feature to connect users.<i><a href=""> Read More</a></i></p>
+
+              
+            </div>
+<br><br>
+            <div >
+                <h3 class="text-center">
+                  Messages
+                </h3>
+                <hr class="my-4">
+                <p><strong>Riya, Cred</strong></p>
+                <p>Hey Walter! Can we connect tomorrow to discuss some important stuff?</p>
+                <br>
+                <p><strong>Garvit, Devfolio</strong></p>
+                <p>Hello sir, the previous work has been done. When shall we discuss further stuff?</p>
+                
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-8 order-xl-1">
+        <div class="card bg-secondary shadow">
+          <div class="card-header bg-white border-0">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <h3 class="mb-0">My account</h3>
+              </div>
+              <div class="col-4 text-right">
+                <a href="#!" class="btn btn-sm btn-primary">View Statistics</a>
+                <a href="#!" class="btn btn-sm btn-primary">Settings</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <form>
+              <h6 class="heading-small text-muted mb-4">User information</h6>
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-username">Username</label>
+                      <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="Walter White">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-email">Email address</label>
+                      <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="walter@example.com">
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <hr class="my-4">
+              <!-- Address -->
+              <h6 class="heading-small text-muted mb-4">Contact information</h6>
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-address">Address</label>
+                      <input id="input-address" class="form-control form-control-alternative" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-city">City</label>
+                      <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="New York">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-country">Country</label>
+                      <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="United States">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-country">Postal code</label>
+                      <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <!-- Description -->
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+
+
+<div class="container container2" style="text-align: center;">
+  <h2 class="h22">INVESTMENTS</h2>
+  <br>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card d-flex mx-auto card3">
+            <!-- <div class="card" style="width: 18rem;"> -->
+              <img class="card-img-top" src="/img/portfolio/2.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">CRED</h5>
+                <p class="card-text">Investment - Rs. 10,00,00,000</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">D.o.I. : June 10, 2020</li>
+                <li class="list-group-item">CEO - Kunal Shah</li>
+                <li class="list-group-item">Last Meeting : Sept 10, 2021</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://cred.club/" class="card-link">View Company</a>
+                <a href="#" class="card-link">Connect</a>
+              </div>
+            <!-- </div> -->
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card d-flex mx-auto card3">
+          <!-- <div class="card" style="width: 18rem;"> -->
+            <img class="card-img-top" src="/img/portfolio/3.png" alt="Card image cap">
+            <div class="card-body">
+              <br>
+              <h5 class="card-title">GROWW</h5>
+              <p class="card-text">Investment - Rs. 5,00,00,000</p>
+            </div>
+            
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">D.o.I. : June 15, 2020</li>
+              <li class="list-group-item">CEO - Lalit Keshre</li>
+              <li class="list-group-item">Last Meeting : Sept 10, 2021</li>
+            </ul>
+            <div class="card-body">
+              <a href="https://groww.in/" class="card-link">View Company</a>
+              <a href="#" class="card-link">Connect</a>
+            </div>
+          <!-- </div> -->
+        </div>
+        
+      </div>
+
+      <div class="col-md-4">
+        <div class="card d-flex mx-auto card3">
+          <!-- <div class="card" style="width: 18rem;"> -->
+            <br>
+            <br>
+            <img class="card-img-top" src="/img/portfolio/6.png" alt="Card image cap">
+            <br>
+            <div class="card-body">
+              <h5 class="card-title">SHUTTL</h5>
+              <p class="card-text">Investment - Rs. 1,00,00,000</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">D.o.I. : June 10, 2020</li>
+              <li class="list-group-item">CEO - Amit Singh</li>
+              <li class="list-group-item">Last Meeting : Sept 10, 2021</li>
+            </ul>
+            <div class="card-body">
+              <a href="https://cred.club/" class="card-link">View Company</a>
+              <a href="#" class="card-link">Connect</a>
+            </div>
+          <!-- </div> -->
+        </div>
+    </div>
+      
+  </div>
+</div>
+
+<br><br>
+<br>
+<br>
+<div class="container container2" style="text-align: center;">
+  <br>
+  <h2 class="h22">FOLLOWING</h2>
+  <br>
+  <div class="row">
+      <div class="col-4 col d-flex justify-content-center" >
+          <div class="card d-flex mx-auto card3">
+            <!-- <div class="card" style="width: 18rem;"> -->
+              <img class="card-img-top" src="/img/portfolio/1.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">PharmEasy</h5>
+                <!-- <p class="card-text">Investment - Rs. 10,00,00,000</p> -->
+              </div>
+              <ul class="list-group list-group-flush">
+                <!-- <li class="list-group-item">D.o.I. : June 10, 2020</li> -->
+                <li class="list-group-item">CEO - Dharmil Sheth</li>
+                <li class="list-group-item">Last Meeting : Sept 10, 2021</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://pharmeasy.in/?isSEM=true&&utm_source=google&utm_medium=cpc&utm_campaign=GSB_New_CX_FP&utm_adgroup=Core&gclid=CjwKCAjw8KmLBhB8EiwAQbqNoGHrmiqfnB3K9gExZOG8awJNi_57Lx5V_1RbVxaqlTOMuP5h6qiBChoCQgkQAvD_BwE" class="card-link">View Company</a>
+                <a href="#" class="card-link">Connect</a>
+              </div>
+            <!-- </div> -->
+          </div>
+      </div>
+      
+    </div>
+      
+  </div>
+</div>
+
+
+<br><br>
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Bridge</h3>
+            <p>
+              Delhi Technological University <br>
+              New Delhi, India<br><br>
+              <strong>Phone:</strong> +91 9876543210<br>
+              <strong>Email:</strong> info@bridge.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Startups in Buzz</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#info-box">FAQs</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/startups">Startups</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/investors">Investors</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/featured">Featured</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/schools_colleges">Schools/Colleges</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/learn">Learn</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter to get all the updates regarding the investors, startups and webinars by Bridge.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy;<strong><span> Bridge</span></strong>. T_Hacks 4.0 .
+      </div>
+      <div class="credits">
+        
+        Made by Team RgR.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/purecounter/purecounter.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

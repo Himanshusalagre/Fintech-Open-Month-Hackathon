@@ -47,13 +47,13 @@
         <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
         <% if(locals.user){ %>
           <% if(locals.user.companyName){ %>
-            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #957DAD;"> Sign Out  </span></a></li>
+            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #2f5ee0;"> Sign Out  </span></a></li>
             <% }else{ %>
-              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #957DAD;"> Sign Out </span></a>
+              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #2f5ee0;"> Sign Out </span></a>
               </li>
             <% } %>
         <% }else{ %>
-              <li><a class="nav-link scrollto" href="/login"><span style="color: #957DAD;">Sign In</span></a></li>
+              <li><a class="nav-link scrollto" href="/login"><span style="color: #2f5ee0;">Sign In</span></a></li>
             <% } %>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
@@ -73,11 +73,11 @@
 
           <!-- Slide 1 -->
           <div class="carousel-item active">
-            <div class="carousel-background"><img src="/img/slide/slide-15.png" alt=""></div>
+            <div ><img src="/img/slide/slide-15.png" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Bridge</span></h2>
-                <i><h4 class="animate__animated animate__fadeInUp">connecting ideas to investments</h4></i>
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Investment Spot</span></h2>
+                <i><h4 class="animate__animated animate__fadeInUp">connecting startups to investments</h4></i>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
               </div>
             </div>
@@ -250,6 +250,7 @@
     </section><!-- End Cta Section -->
 
     <!-- ======= More Services Section ======= -->
+    <!--
     <section class="more-services section-bg">
       <div class="container">
 
@@ -287,9 +288,11 @@
         </div>
 
       </div>
-    </section><!-- End More Services Section -->
+    </section> End More Services Section -->
+  
 
     <!-- ======= Info Box Section ======= -->
+    <!--
     <section id="info-box" class="info-box py-0">
       <div class="container-fluid">
 
@@ -299,9 +302,9 @@
 
             <div class="content">
               <h3><strong>FAQs</strong></h3>
-              <!-- <p>
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p> -->
+              </p> 
             </div>
 
             <div class="accordion-list">
@@ -342,7 +345,8 @@
         </div>
 
       </div>
-    </section><!-- End Info Box Section -->
+    
+    </section> End Info Box Section -->
 
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
@@ -358,7 +362,7 @@
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">FinTech</li>
-              <li data-filter=".filter-web">Pharmacy</li>
+              <li data-filter=".filter-web">Medical</li>
               <li data-filter=".filter-card">Technology</li>
               <li data-filter=".filter-web">Travel</li>
             </ul>
@@ -369,10 +373,10 @@
   
           <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="text-align: center;">
             <div class="portfolio-wrap">
-              <img src="/img/portfolio/1.jpeg" class="img-fluid" alt="">
+              <img src="/img/portfolio/1.png" style="height: 190px; " class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>PharmEasy</h4>
-                <p>Online Pharmacy</p>
+                <h4>Practo</h4>
+                <p>Online Doctor checkup</p>
               </div>
               <div class="portfolio-links">
                 <a href="/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
@@ -546,7 +550,7 @@
                 <i class="bx bx-envelope"></i>
                 <div class="hvr-grow">
                   <h4>Email Us</h4>
-                  <p>contact@bridge.com<br>info@bridge.com</p>
+                  <p>contact@investmentspot.com<br>info@Investmentspot.com</p>
                 </div>
                 
               </div>
@@ -611,12 +615,12 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Bridge</h3>
+            <h3>Investment spot</h3>
             <p>
               Delhi Technological University <br>
               New Delhi, India<br><br>
-              <strong>Phone:</strong> +91 9876543210<br>
-              <strong>Email:</strong> info@bridge.com<br>
+              <strong>Phone:</strong> +91 9964738921<br>
+              <strong>Email:</strong> info@investmentspot.com<br>
             </p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -652,7 +656,7 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Subscribe to our newsletter to get all the updates regarding the investors, startups and webinars by Bridge.</p>
+            <p>Subscribe to our newsletter to get all the updates regarding the investors, startups and webinars by Investment spot.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -665,11 +669,11 @@
 
     <div class="container">
       <div class="copyright">
-        &copy;<strong><span> Bridge</span></strong>. T_Hacks 4.0 .
+        &copy;<strong><span> Investment spot</span></strong>. Fintech Hackathon
       </div>
       <div class="credits">
         
-        Made by Team RgR.
+        Made by Team Problem Solvers
       </div>
     </div>
   </footer><!-- End Footer -->
