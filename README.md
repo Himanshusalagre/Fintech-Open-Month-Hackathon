@@ -72,37 +72,36 @@ A list of technologies used within the project:
 
 - Home Page of Investment Spot
 
-![App Screenshot](https://github.com/Himanshusalagre/Fintech-Open-Month-Hackathon/screenshots/Investors.png)
+![App Screenshot](https://raw.githubusercontent.com/Himanshusalagre/Fintech-Open-Month-Hackathon/main/screenshots/Investors.png)
 
 - Investors Registered on Investment Spot
 
 
-![App Screenshot](https://github.com/Himanshusalagre/Fintech-Open-Month-Hackathon/screenshots/Startup_Analysis.png)
+![App Screenshot](https://raw.githubusercontent.com/Himanshusalagre/Fintech-Open-Month-Hackathon/main/screenshots/Startup_Analysis.png)
 
 - Fundamental Analysis report of startup
 
 
-![App Screenshot](https://github.com/Himanshusalagre/Fintech-Open-Month-Hackathon/screenshots/Invest_in_startup.png)
+![App Screenshot](https://raw.githubusercontent.com/Himanshusalagre/Fintech-Open-Month-Hackathon/main/screenshots/Invest_in_startup.png)
 
 - Invest in startup using razorpay API
 
 
-![App Screenshot](https://github.com/Himanshusalagre/Fintech-Open-Month-Hackathon/screenshots/Registered_startups.png)
+![App Screenshot](https://raw.githubusercontent.com/Himanshusalagre/Fintech-Open-Month-Hackathon/main/screenshots/Registered_startups.png)
 
 - Startups registered on Investment Spot
 
-![App Screenshot](https://github.com/Himanshusalagre/Fintech-Open-Month-Hackathon/screenshots/Learning_Section.png)
+![App Screenshot](https://raw.githubusercontent.com/Himanshusalagre/Fintech-Open-Month-Hackathon/main/screenshots/Learning_Section.png)
 
 - Learning Section for students & Young entrepreneurs.
 
-![App Screenshot](https://github.com/Himanshusalagre/Fintech-Open-Month-Hackathon/screenshots/Investor_&_startup_login.png)
+![App Screenshot](https://raw.githubusercontent.com/Himanshusalagre/Fintech-Open-Month-Hackathon/main/screenshots/Investor_%26_startup_login.png)
 
 - Investors & Sartup Login
 
 
 
-
 ## Video demo Link
 
-
+https://youtu.be/qKS1tuGmGBI
 
