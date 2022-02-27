@@ -68,7 +68,7 @@ A list of technologies used within the project:
 
 
 ## Screenshots
-![App Screenshot](https://github.com/Himanshusalagre/Fintech-Open-Month-Hackathon/screenshots/Home.png)
+![App Screenshot](https://raw.githubusercontent.com/Himanshusalagre/Fintech-Open-Month-Hackathon/main/screenshots/Home.png)
 
 - Home Page of Investment Spot
 
