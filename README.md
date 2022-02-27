@@ -24,7 +24,7 @@ Investment spot will be a web based platform to connect & support such startups 
 * A unique concept to list budding startups from schools and colleges.
 * A special section for inspiring stories of startups growing from scratch.
 * A learn section for amateurs as well as experts to learn and share knowledge.
-* A platform to promote entrepenuership culture among school and college going students.
+* A platform to promote entreprenuership culture among school and college going students.
 
 ## Technologies
 ***
